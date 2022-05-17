@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>searchContacts</class>
+ <widget class="QDialog" name="searchContacts">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>查询联系人</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,5,3">
+     <item>
+      <widget class="QComboBox" name="cb_method">
+       <item>
+        <property name="text">
+         <string>选择查询方式</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按姓名查询</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按手机查询</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按组别查询</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_content"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_search">
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
